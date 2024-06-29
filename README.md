@@ -52,7 +52,7 @@ chattr +i /www/server/panel/data/plugin.json
 sed -i "s|if (bind_user == 'REMOVED') {|if (bind_user == 'True') {|g" /www/server/panel/BTPanel/static/js/index.js
 ```
 
-## 如果遇到重启后宝塔乱码 请DD最新版Debian系统然后修改语言区域：
+** 如果遇到重启后宝塔乱码 请DD最新版Debian系统然后修改语言区域：
 ```
 localectl set-locale LANG=en_US.UTF-8
 nano /etc/default/locale
@@ -63,7 +63,7 @@ LC_ALL="en_US.UTF-8"
 ```
 修改后保存文件，重启VPS即可。
 
-## Let's Encrypt证书申请报错：
+** Let's Encrypt证书申请报错：
 btpip install pyOpenSSL==22.1.0
 
 btpip install cffi==1.14
