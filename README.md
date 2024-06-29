@@ -65,5 +65,7 @@ LC_ALL="en_US.UTF-8"
 
 # Let's Encrypt证书申请报错：
 btpip install pyOpenSSL==22.1.0
+
 btpip install cffi==1.14
+
 bt 1
