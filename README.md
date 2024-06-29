@@ -4,13 +4,18 @@ btpanel-v7.7.0-backup  官方原版v7.7.0版本面板备份
 **Centos/Ubuntu/Debian安装命令 独立运行环境（py3.7）**
 
 ```Bash
-curl -sSO https://raw.githubusercontent.com/8838/btpanel-v7.7.0/main/install/install_panel.sh && bash install_panel.sh
+curl -sSO https://raw.githubusercontent.com/fcurrk/btpanel-v7.7.0/main/install/install_panel.sh && bash install_panel.sh
 ```
 
 **备用安装链接，适用于不能访问GitHub的服务器。文件公开存放在[d.moe.ms](http://d.moe.ms/?btpanel-v7.7.0)**
 
 ```
 curl -sSO http://d.moe.ms/AAAAA/btpanel-v7.7.0/install/install_panel.sh && bash install_panel.sh
+```
+
+# 一键破解
+```
+curl -sSO https://raw.githubusercontent.com/fcurrk/bthappy/main/one_key_happy.sh && bash one_key_happy.sh
 ```
 
 # 手动破解：
@@ -57,3 +62,8 @@ LANG="en_US.UTF-8"
 LC_ALL="en_US.UTF-8"
 ```
 修改后保存文件，重启VPS即可。
+
+# Let's Encrypt证书申请报错：
+btpip install pyOpenSSL==22.1.0
+btpip install cffi==1.14
+bt 1
